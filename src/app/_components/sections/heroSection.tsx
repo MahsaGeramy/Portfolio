@@ -1,6 +1,6 @@
 import TypingText from "@/app/_components/ui/TypingText";
 import Image from "next/image";
-import GirlPic from "../../../../public/images/girl.png";
+import GirlPic from "../../../../public/images/girl.webp";
 import {ArrowDown, ArrowRight} from "lucide-react";
 import Reveal from "@/app/_components/ui/Reveal";
 
@@ -57,7 +57,9 @@ const HeroSection = () =>
                             alt="Mahsa Geramy"
                             fill
                             className="object-cover rotate-0"
-                            sizes="250px"
+                            // width={5000}
+                            // height={5000}
+                            // sizes="250px"
                         />
                     </div>
                     <div className="absolute bottom-[-5px] right-0 z-10">
