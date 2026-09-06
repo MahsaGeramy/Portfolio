@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary: #0019ff;
 }
 
 @theme inline {
@@ -23,4 +25,155 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../public/fonts/PlaywriteHR-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-fancy {
+  font-family: "MyFont", cursive;
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.text-primary {
+  color: var(--primary);
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes card-back {
+  from {
+    transform: translate(-40px, 12px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-40px, 12px) rotate(0deg);
+  }
+}
+
+@keyframes card-middle {
+  from {
+    transform: translate(-20px, 6px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-20px, 6px) rotate(6deg);
+  }
+}
+
+@keyframes card-front {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(12deg);
+  }
+}
+
+.animate-card-back {
+  animation: card-back 1s ease-out forwards;
+}
+
+.animate-card-middle {
+  animation: card-middle 1s ease-out 0.15s forwards;
+}
+
+.animate-card-front {
+  animation: card-front 1s ease-out 0.3s forwards;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+@keyframes about-left {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes about-right {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-about-left {
+  animation: about-left 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-about-right {
+  animation: about-right 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0 1000px rgb(255 255 255 / 0.05) inset;
+  box-shadow: 0 0 0 1000px rgb(255 255 255 / 0.05) inset;
+  background-color: transparent !important;
+  transition: background-color 9999s ease-in-out 0s;
 }
