@@ -38,7 +38,7 @@ const HeroSection = () =>
                     success.
                 </p>
 
-                <section className="relative mt-10 h-[300px] md:h-[400px] w-[300px] md:w-[250px]">
+                <section className="relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px]">
                     <div
                         className="absolute inset-0 translate-x-[5px] md:translate-x-[-40px] translate-y-[12px] animate-card-back
                         rounded-3xl border border-white/10 bg-white/[0.01] opacity-35 shadow-2xl
@@ -57,8 +57,6 @@ const HeroSection = () =>
                             alt="Mahsa Geramy"
                             fill
                             className="object-cover rotate-0"
-                            // width={5000}
-                            // height={5000}
                             // sizes="250px"
                         />
                     </div>

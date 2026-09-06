@@ -46,7 +46,7 @@ export default function TypingText() {
     }, [text, currentRole, isDeleting]);
 
     return (
-        <span className="inline-block min-w-[280px] text-left text-primary font-bold text-[30px] md:text-[40px]">
+        <span className="flex justify-center min-w-[280px] text-left text-primary font-bold text-[30px] md:text-[40px]">
             {text}
             <span className="ml-1 animate-pulse">|</span>
         </span>
