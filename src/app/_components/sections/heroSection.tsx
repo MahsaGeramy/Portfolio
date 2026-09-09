@@ -26,7 +26,7 @@ const HeroSection = () =>
                 </p>
 
                 <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-                    Front-End Developer &
+                    Front-End Engineer &
                 </h1>
 
                 <h2 className="mt-3 text-3xl md:text-4xl font-bold text-zinc-500 dark:text-zinc-400">

@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 
-const roles = ["Freelancer", "Web Designer", "SEO Specialist"];
+const roles = ["Freelancer", "Web Designer", "SEO Specialist", "Web Developer"];
 
 const TYPING_SPEED = 100;
 const DELETING_SPEED = 60;

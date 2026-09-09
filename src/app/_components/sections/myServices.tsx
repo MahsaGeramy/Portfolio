@@ -71,7 +71,7 @@ const MyServices = () => {
 
     return (
         <section id="services" className="flex flex-col w-full max-w-[50rem]">
-            <p className="mb-5 mt-20 text-center text-3xl md:text-4xl font-bold">
+            <p className="mb-5 mt-32 text-center text-3xl md:text-4xl font-bold">
                 <span className="text-primary">My</span> Services
             </p>
             {services.map((service) => {
@@ -100,9 +100,7 @@ const MyServices = () => {
                                     <span
                                         key={tag}
                                         className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/60"
-                                    >
-                    {tag}
-                </span>
+                                    >{tag}</span>
                                 ))}
                             </div>
                         </div>

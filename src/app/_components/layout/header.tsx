@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const navItems = ["Home", "Services", "Skills", "Works"];
+const navItems = ["Home", "Services", "Works"];
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState("home");
@@ -11,40 +11,45 @@ const Header = () => {
     useEffect(() => {
         const sections = navItems
             .map((item) => document.getElementById(item.toLowerCase()))
-            .filter(Boolean);
+            .filter((section): section is HTMLElement => section !== null);
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const visibleSection = entries
-                    .filter((entry) => entry.isIntersecting)
-                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        const handleScroll = () => {
+            const headerHeight = 100;
 
-                if (visibleSection) {
-                    setActiveSection(visibleSection.target.id);
+            let currentSection = "home";
+
+            for (const section of sections) {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop <= headerHeight) {
+                    currentSection = section.id;
                 }
-            },
-            {
-                threshold: [0.3, 0.5, 0.7],
             }
-        );
 
-        sections.forEach((section) => {
-            if (section) observer.observe(section);
+            setActiveSection(currentSection);
+        };
+
+        handleScroll();
+
+        window.addEventListener("scroll", handleScroll, {
+            passive: true,
         });
 
-        return () => observer.disconnect();
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
-        <header className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 items-center py-3 justify-between px-5 md:px-10 backdrop-blur-sm">
+        <header className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 items-center justify-between px-5 py-3 backdrop-blur-sm md:px-10">
             <a
                 href="#home"
-                className="md:text-lg font-cursive font-semibold text-zinc-900 dark:text-white font-fancy text-sm"
+                className="font-cursive text-sm font-semibold font-fancy text-zinc-900 dark:text-white md:text-lg"
             >
                 Mahsa Geramy
             </a>
 
-            <nav className="hidden md:flex items-center gap-2 rounded-full bg-transparent px-2 py-3">
+            <nav className="hidden items-center gap-2 rounded-full bg-transparent px-2 py-3 md:flex">
                 {navItems.map((item) => {
                     const sectionId = item.toLowerCase();
                     const isActive = activeSection === sectionId;
@@ -75,11 +80,12 @@ const Header = () => {
 
             <a
                 href="#contactMe"
-                className="group flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full
-                bg-[linear-gradient(90deg,var(--primary)_0%,#3b4a9e_20%,#3b4a9e_50%,var(--primary)_100%)]
-                px-4 md:px-6 py-3 md:py-4 text-white"
+                className="group flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full bg-[linear-gradient(90deg,var(--primary)_0%,#3b4a9e_20%,#3b4a9e_50%,var(--primary)_100%)] px-4 py-3 text-white md:px-6 md:py-4"
             >
-                <span className="text-sm md:text-base">Contact me</span>
+                <span className="text-sm md:text-base">
+                    Contact me
+                </span>
+
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <ArrowRight size={18} />
                 </span>
