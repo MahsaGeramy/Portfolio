@@ -10,7 +10,7 @@ interface Project {
 
 const ProjectCard = ({ data }: { data: Project }) => {
     return (
-        <Link target="_blank" href={data.link} className="w-[300px] bg-white/20 p-3 rounded-xl flex flex-col gap-3 hover:scale-[0.98] transition">
+        <Link target="_blank" href={data.link} className="min-w-[300px] w-[300px] bg-white/20 p-3 rounded-xl flex flex-col gap-3 hover:scale-[0.98] transition">
             <div className="w-full h-[200px]">
                 <Image
                     className="w-full h-full object-cover rounded-xl"
