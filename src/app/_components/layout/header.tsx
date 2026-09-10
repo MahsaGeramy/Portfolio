@@ -80,7 +80,7 @@ const Header = () => {
             </nav>
 
             <a
-                href="#contactMe"
+                href={`${appRoutes.Main}#contactMe`}
                 className="group flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full
                  bg-[linear-gradient(90deg,var(--primary)_0%,#4d5ba7_40%,#4d5ba7_60%,var(--primary)_100%)] px-4 py-3
                   text-white md:px-6 md:py-4"
