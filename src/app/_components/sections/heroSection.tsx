@@ -25,7 +25,7 @@ const HeroSection = () =>
                     Hi! I’m Mahsa.
                 </p>
 
-                <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-50">
+                <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-zinc-50">
                     Front-End Engineer &
                 </h1>
 
