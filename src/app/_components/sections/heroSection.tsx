@@ -21,11 +21,11 @@ const HeroSection = () =>
                     className="pointer-events-none absolute right-[-30rem] bottom-0 h-[300px] w-[300px] -translate-x-1/2
                     animate-float rounded-full bg-blue-900/50 blur-[120px] hidden md:block"
                 />
-                <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
+                <p className="mt-6 text-lg leading-8 text-zinc-300">
                     Hi! I’m Mahsa.
                 </p>
 
-                <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+                <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-50">
                     Front-End Engineer &
                 </h1>
 
@@ -33,7 +33,7 @@ const HeroSection = () =>
                     <TypingText />
                 </h2>
 
-                <p className="mt-6 md:text-lg md:leading-8 text-zinc-600 dark:text-zinc-300">
+                <p className="mt-6 md:text-lg md:leading-8 text-zinc-300">
                     I Build Designs and Websites that solve problems, inspiring
                     success.
                 </p>
@@ -72,7 +72,6 @@ const HeroSection = () =>
                                         d="M 60,60 m -43,0 a 43,43 0 1,1 86,0 a 43,43 0 1,1 -86,0"
                                     />
                                 </defs>
-
                                 <text
                                     fill="white"
                                     fontSize="10"
@@ -100,7 +99,7 @@ const HeroSection = () =>
                 <Reveal
                     className="w-full md:w-[60%]"
                 >
-                    <p className="text-2xl font-bold">
+                    <p className="text-2xl font-bold text-zinc-300">
                         About Me: Freelancer who enjoys <label className="text-primary">web design</label> and
                         <label className="text-primary"> development</label>, passionate about my work, disciplined and
                         successful.
@@ -111,7 +110,7 @@ const HeroSection = () =>
                     className="w-full md:w-[40%]"
                 >
                     <div className="flex flex-col items-center gap-3">
-                        <p>
+                        <p className="text-zinc-300">
                             If you have a project in mind, check out my work
                             and contact me to work together. Best of luck!
                         </p>

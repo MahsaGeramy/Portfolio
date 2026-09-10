@@ -44,7 +44,7 @@ const Header = () => {
         <header className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 items-center justify-between px-5 py-3 backdrop-blur-sm md:px-10">
             <a
                 href="#home"
-                className="font-cursive text-sm font-semibold font-fancy text-zinc-900 dark:text-white md:text-lg"
+                className="font-cursive text-sm font-semibold font-fancy text-white md:text-lg"
             >
                 Mahsa Geramy
             </a>

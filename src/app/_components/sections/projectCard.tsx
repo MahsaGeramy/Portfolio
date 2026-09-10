@@ -20,8 +20,8 @@ const ProjectCard = ({ data }: { data: Project }) => {
                     height={300}
                 />
             </div>
-            <h3 className="text-xl font-bold">{data.title}</h3>
-            <p className="text-left text-sm">{data.description}</p>
+            <h3 className="text-xl font-bold text-zinc-200">{data.title}</h3>
+            <p className="text-left text-sm text-zinc-300">{data.description}</p>
         </Link>
     );
 };

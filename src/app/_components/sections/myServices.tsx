@@ -75,7 +75,7 @@ const MyServices = () => {
             delay={200}
         >
             <section id="services" className="flex flex-col w-full max-w-[50rem]">
-                <p className="mb-5 mt-32 text-center text-3xl md:text-4xl font-bold">
+                <p className="mb-5 mt-32 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Services
                 </p>
                 {services.map((service) => {
@@ -93,12 +93,12 @@ const MyServices = () => {
                                         size={30}
                                         strokeWidth={1.5}
                                     />
-                                    <span className="text-xl md:text-2xl">{service.title}</span>
+                                    <span className="text-xl md:text-2xl text-zinc-200">{service.title}</span>
                                 </div>
                             }
                         >
                             <div className="pl-12 pt-5">
-                                <p>{service.description}</p>
+                                <p className="text-zinc-300">{service.description}</p>
                                 <div className="mt-5 flex flex-wrap gap-2">
                                     {service.tags.map((tag) => (
                                         <span
