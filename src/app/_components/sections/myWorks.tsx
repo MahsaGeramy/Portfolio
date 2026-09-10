@@ -46,8 +46,8 @@ const MyWorks = () =>{
             delay={200}
             className="w-full"
         >
-            <section id="works" className="flex flex-col w-full">
-                <p className="mb-10 mt-20 text-center text-3xl md:text-4xl font-bold text-zinc-100">
+            <section id="works" className="flex flex-col w-full mt-24">
+                <p className="mb-10 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Works
                 </p>
                 <Slider

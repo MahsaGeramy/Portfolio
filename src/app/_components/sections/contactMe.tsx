@@ -106,8 +106,8 @@ const ContactMe = () => {
             delay={200}
             className="w-full"
         >
-            <section id="contactMe" className="mt-10 md:mt-20 w-full">
-                <p className="mb-5 mt-10 text-center text-3xl md:text-4xl font-bold text-zinc-100">
+            <section id="contactMe" className="mt-10 md:mt-20 w-full mt-24">
+                <p className="mb-5 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     Contact <span className="text-primary">Me</span>
                 </p>
                 <div className="mt-5 md:mt-10 flex flex-col md:flex-row gap-10 md:gap-16">

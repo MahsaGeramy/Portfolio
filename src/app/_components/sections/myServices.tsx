@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import Collapse from "@/app/_components/ui/collapse";
-import { Code2, PencilIcon, Search } from "lucide-react";
+import { Code2, PencilIcon, Search,Globe } from "lucide-react";
 import Reveal from "@/app/_components/ui/Reveal";
 
 const services = [
@@ -9,20 +9,34 @@ const services = [
         id: 1,
         title: "Web Development",
         description:
-            "I build scalable, responsive, and high-performance web applications using modern Front-End technologies.",
+            "I build scalable, responsive, and high-performance web applications using modern web technologies and development practices.",
         icon: Code2,
         tags: [
             "React",
             "Next.js",
             "TypeScript",
             "Node.js",
+            "REST APIs",
             "Responsive Design",
-            "RESTful APIs",
-            "Reusable Components",
         ],
     },
     {
         id: 2,
+        title: "web Development",
+        description:
+            "I build and customize responsive WordPress websites with a focus on performance, usability, maintainability, and SEO.",
+        icon: Globe,
+        tags: [
+            "WordPress",
+            "Elementor",
+            "Custom Themes",
+            "Responsive Design",
+            "SEO",
+            "Performance",
+        ],
+    },
+    {
+        id: 3,
         title: "Web Design",
         description:
             "I create clean, responsive, and user-focused interfaces that balance visual design, usability, and performance.",
@@ -37,7 +51,7 @@ const services = [
         ],
     },
     {
-        id: 3,
+        id: 4,
         title: "SEO Specialist",
         description:
             "I optimize websites for better performance, search visibility, and user experience through technical SEO and modern web performance practices.",
@@ -74,8 +88,8 @@ const MyServices = () => {
         <Reveal
             delay={200}
         >
-            <section id="services" className="flex flex-col w-full max-w-[50rem]">
-                <p className="mb-5 mt-32 text-center text-3xl md:text-4xl font-bold text-zinc-100">
+            <section id="services" className="flex flex-col w-full max-w-[50rem] mt-20">
+                <p className="mb-8 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Services
                 </p>
                 {services.map((service) => {
