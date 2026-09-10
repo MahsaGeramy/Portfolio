@@ -6,7 +6,7 @@ import MyWorks from "@/app/_components/sections/myWorks";
 export default function Home() {
 
     return (
-        <main className="flex min-h-screen max-w-[1140px] flex-col items-center justify-center px-6 font-sans mt-5 md:mt-10">
+        <main className="flex min-h-screen max-w-[1140px] w-full flex-col items-center justify-center px-6 font-sans mt-5 md:mt-10">
             <HeroSection />
             <MyServices/>
             <MyWorks/>

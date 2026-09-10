@@ -25,7 +25,7 @@ export default function RootLayout({children}: LayoutProps<"/">) {
           lang="en"
           className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       >
-      <body id="home" className="min-h-full flex flex-col bg-zinc-50 justify-center items-center dark:bg-black pb-10">
+      <body id="home" className="min-h-full flex flex-col justify-center items-center bg-black pb-10">
       <CustomCursor/>
       <Header/>
       {children}
