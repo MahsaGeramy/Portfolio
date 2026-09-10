@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import appRoutes from "@/common/appRoutes";
 
 const navItems = ["Home", "Services", "Works"];
 
@@ -43,7 +44,7 @@ const Header = () => {
     return (
         <header className="fixed left-1/2 top-0 z-50 flex w-full -translate-x-1/2 items-center justify-between px-5 py-3 backdrop-blur-sm md:px-10">
             <a
-                href="#home"
+                href={appRoutes.Main}
                 className="font-cursive text-sm font-semibold font-fancy text-white md:text-lg"
             >
                 Mahsa Geramy
@@ -57,7 +58,7 @@ const Header = () => {
                     return (
                         <a
                             key={item}
-                            href={`#${sectionId}`}
+                            href={`${appRoutes.Main}#${sectionId}`}
                             className={`group flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors duration-300 ${
                                 isActive
                                     ? "text-[var(--primary)]"

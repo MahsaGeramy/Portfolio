@@ -17,7 +17,7 @@ const MyWorks = () =>{
         },
         {
             title: "Mive",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
+            description: "Built a modern and responsive e-commerce experience for online fruit shopping, focusing on scalable UI architecture, intuitive product discovery, and a smooth, user-friendly purchasing flow across different devices.",
             link: "https://toroo.ir/",
             image: MivePic
         },
