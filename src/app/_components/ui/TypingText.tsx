@@ -14,6 +14,7 @@ export default function TypingText() {
 
     const currentRole = roles[roleIndex];
 
+
     useEffect(() => {
         const isComplete = text === currentRole;
 
