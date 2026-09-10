@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import CustomCursor from "@/app/_components/layout/CustomCursor";
 import Header from "@/app/_components/layout/header";
 

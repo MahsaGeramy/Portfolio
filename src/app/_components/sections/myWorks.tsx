@@ -4,31 +4,12 @@ import Reveal from "@/app/_components/ui/Reveal";
 
 import JamoojPic from "../../../../public/images/projects/jamooj.png";
 import MivePic from "../../../../public/images/projects/mive.png";
+import NotFoundPic from "../../../../public/images/projects/404.png";
 
 const MyWorks = () =>{
 
     const projects = [
         {
-            title: "jamooj",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
-            link: "https://jamooj.com/",
-            image: JamoojPic
-        },{
-            title: "jamooj",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
-            link: "https://jamooj.com/",
-            image: JamoojPic
-        },{
-            title: "jamooj",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
-            link: "https://jamooj.com/",
-            image: JamoojPic
-        },{
-            title: "jamooj",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
-            link: "https://jamooj.com/",
-            image: JamoojPic
-        },{
             title: "jamooj",
             description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
             link: "https://jamooj.com/",
@@ -39,7 +20,13 @@ const MyWorks = () =>{
             description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
             link: "https://toroo.ir/",
             image: MivePic
-        }
+        },
+        {
+            title: "NotFound",
+            description: "Designed and developed a modern, interactive 404 page featuring a playful mini-game, engaging visuals, and a smooth user experience that turns a missing page into a fun interaction.",
+            link: "https://mahsageramy.ir/test",
+            image: NotFoundPic
+        },
     ]
     return(
         <Reveal
