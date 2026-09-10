@@ -80,7 +80,9 @@ const Header = () => {
 
             <a
                 href="#contactMe"
-                className="group flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full bg-[linear-gradient(90deg,var(--primary)_0%,#3b4a9e_20%,#3b4a9e_50%,var(--primary)_100%)] px-4 py-3 text-white md:px-6 md:py-4"
+                className="group flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full
+                 bg-[linear-gradient(90deg,var(--primary)_0%,#4d5ba7_40%,#4d5ba7_60%,var(--primary)_100%)] px-4 py-3
+                  text-white md:px-6 md:py-4"
             >
                 <span className="text-sm md:text-base">
                     Contact me

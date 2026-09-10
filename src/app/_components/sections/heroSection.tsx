@@ -8,7 +8,7 @@ const HeroSection = () =>
 {
     return(
         <>
-            <section id="home" className="relative animate-fade-up flex max-w-2xl flex-col items-center justify-center text-center py-10">
+            <section className="relative animate-fade-up flex max-w-2xl flex-col items-center justify-center text-center py-10">
                 <div
                     className="pointer-events-none absolute left-1 top-1 h-[400px] w-[400px] -translate-x-1/2
                     animate-float rounded-full bg-blue-900/50 blur-[120px]"
@@ -117,7 +117,7 @@ const HeroSection = () =>
                         </p>
                         <a href="#contactMe"
                             className="group mt-4 md:mt-5 flex cursor-pointer items-center justify-center gap-2 rounded-full
-                            bg-[linear-gradient(90deg,var(--primary)_0%,#3b4a9e_20%,#3b4a9e_50%,var(--primary)_100%)]
+                            bg-[linear-gradient(90deg,var(--primary)_0%,#4d5ba7_40%,#4d5ba7_60%,var(--primary)_100%)]
                             px-6 py-4 text-white disabled:cursor-not-allowed disabled:opacity-50 w-fit"
                         >
                             <span>Contact me</span>

@@ -45,22 +45,11 @@ export default function CustomCursor() {
         <div
             ref={cursorRef}
             aria-hidden="true"
-            className="
-                pointer-events-none
-                fixed
-                left-0
-                top-0
-                z-[9999]
+            className="pointer-events-none fixed left-0 top-0 z-[9999] hidden md:block
                 h-4
                 w-4
                 -translate-x-1/2
-                -translate-y-1/2
-                rounded-full
-                border
-                border-white/70
-                bg-white/10
-                backdrop-blur-sm
-            "
+                -translate-y-1/2 rounded-full border border-white/70 bg-white/10 backdrop-blur-sm"
         />
     );
 }
