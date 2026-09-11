@@ -38,27 +38,30 @@ const HeroSection = () =>
                     success.
                 </p>
 
-                <section className="relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px]">
-                    <div
-                        className="absolute inset-0 translate-x-[5px] md:translate-x-[-40px] translate-y-[12px] animate-card-back
-                        rounded-3xl border border-white/10 bg-white/[0.01] opacity-35 shadow-2xl
-                        backdrop-blur-sm"
-                    />
-                    <div
-                        className="absolute inset-0 translate-x-[10px] md:translate-x-[-20px] translate-y-[6px] animate-card-middle
-                        rounded-3xl border border-white/10 bg-white/[0.5] opacity-55 shadow-2xl
-                        backdrop-blur-sm"
-                    />
-                    <div className="absolute inset-0 translate-x-[15px] animate-card-front overflow-hidden rounded-3xl border
-                         border-white/10 bg-white/[0.08] opacity-100 shadow-2xl backdrop-blur-sm"
-                    >
-                        <Image
-                            src={GirlPic}
-                            alt="Mahsa Geramy"
-                            fill
-                            className="object-cover rotate-0"
-                            // sizes="250px"
-                        />
+                <section className="relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px] group">
+                    <div className="absolute inset-0 translate-x-[5px] md:translate-x-[-40px] translate-y-[12px]
+    transition-transform duration-500 ease-out group-hover:-translate-x-[50px]">
+                        <div className="h-full w-full animate-card-back rounded-3xl border border-white/10 bg-white/[0.3] opacity-40
+        shadow-2xl backdrop-blur-sm" />
+                    </div>
+
+                    <div className="absolute inset-0 translate-x-[10px] md:translate-x-[-20px] translate-y-[6px]
+    transition-transform duration-500 ease-out group-hover:-translate-x-[30px]">
+                        <div className="h-full w-full animate-card-middle rounded-3xl border border-white/10 bg-white/[0.5] opacity-55
+        shadow-2xl backdrop-blur-sm" />
+                    </div>
+
+                    <div className="absolute inset-0 translate-x-[15px]
+    transition-transform duration-500 ease-out group-hover:translate-x-[5px]">
+                        <div className="relative h-full w-full animate-card-front overflow-hidden rounded-3xl border border-white/10
+        bg-white/[0.08] shadow-2xl backdrop-blur-sm">
+                            <Image
+                                src={GirlPic}
+                                alt="Mahsa Geramy"
+                                fill
+                                className="object-cover rotate-0"
+                            />
+                        </div>
                     </div>
                     <div className="absolute bottom-[-5px] right-0 z-10">
                         <div className="relative flex h-28 w-28 items-center justify-center">
