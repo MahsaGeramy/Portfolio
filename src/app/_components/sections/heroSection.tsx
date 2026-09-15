@@ -38,7 +38,7 @@ const HeroSection = () =>
                     success.
                 </p>
 
-                <section className="relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px] group">
+                <section className="relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px]">
                     <div className="absolute inset-0 translate-x-[5px] md:translate-x-[-40px] translate-y-[12px]
     transition-transform duration-500 ease-out group-hover:-translate-x-[50px]">
                         <div className="h-full w-full animate-card-back rounded-3xl border border-white/10 bg-white/[0.3] opacity-40
@@ -112,22 +112,37 @@ const HeroSection = () =>
                     delay={200}
                     className="w-full md:w-[40%]"
                 >
-                    <div className="flex flex-col items-center gap-3">
+                    <div className="flex flex-col items-center gap-5">
                         <p className="text-zinc-300">
                             If you have a project in mind, check out my work
                             and contact me to work together. Best of luck!
                         </p>
-                        <a href="#contactMe"
-                            className="group mt-4 md:mt-5 flex cursor-pointer items-center justify-center gap-2 rounded-full
+                        <div className="flex flex-col md:flex-row gap-3 md:gap-5 justify-start w-full">
+                            <a href="#contactMe"
+                               className="group flex cursor-pointer items-center justify-center gap-2 rounded-full
                             bg-[linear-gradient(90deg,var(--primary)_0%,#4d5ba7_40%,#4d5ba7_60%,var(--primary)_100%)]
-                            px-6 py-4 text-white disabled:cursor-not-allowed disabled:opacity-50 w-fit"
-                        >
-                            <span>Contact me</span>
+                            px-6 py-4 text-white disabled:cursor-not-allowed disabled:opacity-50 w-full md:w-fit"
+                            >
+                                <span>Contact me</span>
 
-                            <span className="transition-transform duration-300 group-hover:translate-x-1">
+                                <span className="transition-transform duration-300 group-hover:translate-x-1">
                                 <ArrowRight size={18} />
                             </span>
-                        </a>
+                            </a>
+                            <a
+                                href="/MahsaGeramy.pdf"
+                                download
+                                className="group flex cursor-pointer items-center justify-center gap-2 rounded-full
+    border border-[var(--primary)] px-6 py-4 text-white transition-all duration-300
+    hover:bg-white/10 w-full md:w-fit"
+                            >
+                                <span>Download Resume</span>
+
+                                <span className="transition-transform duration-300 group-hover:translate-y-1">
+        <ArrowDown size={18} />
+    </span>
+                            </a>
+                        </div>
                     </div>
                 </Reveal>
             </section>
