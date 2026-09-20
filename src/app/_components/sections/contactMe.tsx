@@ -106,7 +106,7 @@ const ContactMe = () => {
             delay={200}
             className="w-full"
         >
-            <section id="contactMe" className="mt-10 md:mt-20 w-full mt-24">
+            <section id="contactMe" className="md:mt-20 w-full pt-24">
                 <p className="mb-5 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     Contact <span className="text-primary">Me</span>
                 </p>

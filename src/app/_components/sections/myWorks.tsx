@@ -33,7 +33,7 @@ const MyWorks = () =>{
             delay={200}
             className="w-full"
         >
-            <section id="works" className="flex flex-col w-full mt-24">
+            <section id="works" className="flex flex-col w-full pt-24 pb-14">
                 <p className="mb-10 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Works
                 </p>

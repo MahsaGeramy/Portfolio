@@ -100,7 +100,7 @@ const HeroSection = () =>
                     </div>
                 </section>
             </section>
-            <section className="mt-20 md:mt-32 mb-10 md:mb-24 flex flex-col md:flex-row w-full gap-5 md:gap-10">
+            <section id="about" className="mt-20 md:mt-32 mb-10 md:mb-24 flex flex-col md:flex-row w-full gap-5 md:gap-10">
                 <Reveal
                     className="w-full md:w-[60%]"
                 >
@@ -135,7 +135,8 @@ const HeroSection = () =>
                                 href="/MahsaGeramy.pdf"
                                 download
                                 className="group flex cursor-pointer items-center justify-center gap-2 rounded-full
-    border border-[var(--primary)] px-6 py-4 text-white transition-all duration-300
+                                border border-[var(--primary)] px-6 py-4 text-white transition-all duration-300
+
     hover:bg-white/10 w-full md:w-fit"
                             >
                                 <span>Download Resume</span>
