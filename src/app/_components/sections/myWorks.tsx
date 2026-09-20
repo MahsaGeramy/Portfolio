@@ -2,9 +2,9 @@ import Slider from "@/app/_components/slider/slider";
 import ProjectCard from "@/app/_components/sections/projectCard";
 import Reveal from "@/app/_components/ui/Reveal";
 
-import JamoojPic from "../../../../public/images/projects/jamooj.png";
-import MivePic from "../../../../public/images/projects/mive.png";
-import NotFoundPic from "../../../../public/images/projects/404.png";
+import JamoojPic from "../../../../public/images/projects/jamooj.webp";
+import MivePic from "../../../../public/images/projects/mive.webp";
+import NotFoundPic from "../../../../public/images/projects/404.webp";
 
 const MyWorks = () =>{
 
