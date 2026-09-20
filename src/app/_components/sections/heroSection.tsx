@@ -58,7 +58,7 @@ const HeroSection = () =>
                             <Image
                                 src={GirlPic}
                                 alt="Mahsa Geramy"
-                                sizes="(max-width: 768px) 180px, 248px"
+                                sizes="(max-width: 768px) 300px, 500px"
                                 fill
                                 fetchPriority="high"
                                 className="object-cover rotate-0"
