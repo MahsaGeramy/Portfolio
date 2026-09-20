@@ -59,6 +59,7 @@ const HeroSection = () =>
                                 src={GirlPic}
                                 alt="Mahsa Geramy"
                                 fill
+                                priority
                                 className="object-cover rotate-0"
                             />
                         </div>
