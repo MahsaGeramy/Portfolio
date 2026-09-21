@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
-const ScrollSnake = dynamic(() => import("./scrollSnake"), { ssr: false });
+const ScrollThread = dynamic(() => import("./scrollThread"), { ssr: false });
 
 const ScrollSnakeLoader = () => {
     const [shouldLoad, setShouldLoad] = useState(false);
@@ -17,7 +17,7 @@ const ScrollSnakeLoader = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [shouldLoad]);
 
-    return shouldLoad ? <ScrollSnake /> : null;
+    return shouldLoad ? <ScrollThread /> : null;
 };
 
 export default ScrollSnakeLoader;
