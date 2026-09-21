@@ -39,7 +39,7 @@ const ScrollProgress = () => {
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 z-[9999] h-[2px] w-full">
+        <div className="fixed top-0 left-0 z-[9999] h-[2px] w-full md:hidden">
             <div
                 ref={progressRef}
                 className="h-full bg-primary transition"
