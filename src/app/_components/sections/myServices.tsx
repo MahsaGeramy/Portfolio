@@ -88,7 +88,7 @@ const MyServices = () => {
         <Reveal
             delay={200}
         >
-            <section id="services" className="flex flex-col w-full max-w-[50rem] mt-20">
+            <section id="services" className="flex flex-col w-full max-w-[50rem] pt-20">
                 <p className="mb-8 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Services
                 </p>

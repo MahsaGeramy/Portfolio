@@ -12,7 +12,7 @@ const MyWorks = () =>{
     const projects = [
         {
             title: "jamooj",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
+            description: "Developed a high-performance accommodation platform with Next.js and TypeScript, with a strong focus on technical SEO, optimized rendering, Core Web Vitals, and fast, responsive experiences across the platform.",
             link: "https://jamooj.com/",
             image: JamoojPic
         },
@@ -23,16 +23,16 @@ const MyWorks = () =>{
             image: MivePic
         },
         {
+            title: "Jamooj Host",
+            description: "Developed a scalable accommodation platform with Next.js and TypeScript, focusing on rendering performance, technical SEO, responsive UI, and optimized user flows for discovering and booking stays.",
+            link: "https://host.jamooj.com/",
+            image: JamoojHostPic
+        },
+        {
             title: "NotFound",
             description: "Designed and developed a modern, interactive 404 page featuring a playful mini-game, engaging visuals, and a smooth user experience that turns a missing page into a fun interaction.",
             link: "https://mahsageramy.ir/test",
             image: NotFoundPic
-        },
-        {
-            title: "Jamooj Host",
-            description: "Built a high-performance accommodation rental platform with a responsive UI, optimized rendering, and a seamless user experience for discovering and booking stays.",
-            link: "https://host.jamooj.com/",
-            image: JamoojHostPic
         },
     ]
     return(
