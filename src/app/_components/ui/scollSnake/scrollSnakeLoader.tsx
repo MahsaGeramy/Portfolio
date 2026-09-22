@@ -1,10 +1,11 @@
-"use client";
+"use client"
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const ScrollThread = dynamic(() => import("./scrollThread"), { ssr: false });
 
 const ScrollSnakeLoader = () => {
+
     const [shouldLoad, setShouldLoad] = useState(false);
 
     useEffect(() => {

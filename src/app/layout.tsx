@@ -17,7 +17,7 @@ export default function RootLayout({children}: LayoutProps<"/">) {
       >
       <body id="home" className="min-h-full flex flex-col justify-center items-center bg-black pb-10">
       <ScrollProgress/>
-      <CustomCursor/>
+      {/*<CustomCursor/>*/}
       <Header/>
       {children}
       </body>

@@ -31,7 +31,7 @@ const MyWorks = () =>{
         {
             title: "NotFound",
             description: "Designed and developed a modern, interactive 404 page featuring a playful mini-game, engaging visuals, and a smooth user experience that turns a missing page into a fun interaction.",
-            link: "https://mahsageramy.ir/test",
+            link: "https://mahsageramy.ir/NotFound",
             image: NotFoundPic
         },
     ]

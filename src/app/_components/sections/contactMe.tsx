@@ -28,8 +28,8 @@ const contactInfo = [
     {
         icon: Mail,
         title: "Email",
-        value: "mahsa@example.com",
-        href: "mailto:mahsa@example.com",
+        value: "mahsageramy.pr@gmail.com",
+        href: "mailto:mahsageramy.pr@gmail.com",
     },
     {
         icon: FaGithub,
@@ -46,6 +46,7 @@ const contactInfo = [
 ];
 
 const ContactMe = () => {
+
     const [form, setForm] = useState<ContactForm>(initialForm);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [status, setStatus] = useState<{

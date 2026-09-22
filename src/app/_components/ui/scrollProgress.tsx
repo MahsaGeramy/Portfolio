@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 
 const ScrollProgress = () => {
+
     const progressRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
