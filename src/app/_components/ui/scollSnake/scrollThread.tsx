@@ -1,18 +1,4 @@
-"use client";
-
-/**
- * ScrollThread — نخ باریکی که با اسکرول کشیده می‌شه.
- *
- * - مسیر مثل خط مداد دست‌کشیده و پرپیچ‌وخمه (scrollThreadMath.ts).
- * - با stroke-dashoffset «کشیده» می‌شه و سرش یه درخشش آبی داره.
- * - سر نخ مستقیم به اسکرول وصل نیست: با میرایی نمایی + سقف سرعت دنبالش میاد،
- *   پس پله‌پله بودن چرخ ماوس یا پرش اسکرول حس نمی‌شه.
- * - وقتی سر نخ به عنوان هر بخش برسه، نقطه‌ی اون بخش روشن می‌شه.
- * - فقط وقتی سر نخ در حال حرکته rAF اجرا می‌شه.
- * - با prefers-reduced-motion نخ کامل و ثابت نشون داده می‌شه.
- * - <main> باید کلاس `relative` داشته باشه.
- */
-
+"use client"
 import { useEffect, useRef, useState } from "react";
 import {
     buildLut,
@@ -23,9 +9,7 @@ import {
     ThreadLayout,
 } from "./scrollThreadMath";
 
-/** ثابت زمانی (ثانیه): بزرگ‌تر = نرم‌تر و دیرجنبان‌تر */
 const TAU = 0.3;
-/** سقف سرعت سر نخ (px بر ثانیه، روی طول مسیر) */
 const MAX_SPEED = 1500;
 const EPS = 0.3;
 
@@ -37,7 +21,6 @@ const ScrollThread = () => {
     const headRef = useRef<SVGGElement>(null);
     const nodeRefs = useRef<(SVGGElement | null)[]>([]);
 
-    // ۱) اندازه‌گیری: موقع mount، resize، load و تغییر ارتفاع main (مثلاً وقتی بخش‌های dynamic لود می‌شن)
     useEffect(() => {
         let raf = 0;
         const measure = () => {
@@ -65,7 +48,6 @@ const ScrollThread = () => {
         };
     }, []);
 
-    // ۲) انیمیشن: بعد از هر تغییر layout دوباره راه‌اندازی می‌شه
     useEffect(() => {
         const svg = svgRef.current;
         const path = pathRef.current;
@@ -80,7 +62,6 @@ const ScrollThread = () => {
 
         path.style.strokeDasharray = `${total}`;
 
-        // جای نقطه‌ی هر بخش روی مسیر
         const nodeLens = layout.nodes.map((n, i) => {
             const len = lengthAtY(lut, n.y);
             const pt = path.getPointAtLength(len);
@@ -128,8 +109,6 @@ const ScrollThread = () => {
                 maxScroll > 0
                     ? Math.min(Math.max(window.scrollY / maxScroll, 0), 1)
                     : 0;
-            // نقطه‌ی «هدف» از ۴۰٪ ارتفاع صفحه (بالای اسکرول) تا ۱۰۰٪ (ته صفحه) می‌ره،
-            // تا آخر نخ هم کامل کشیده بشه
             const probe = window.scrollY + vh * (0.4 + 0.6 * p) - mainDocTop;
             target = lengthAtY(lut, probe);
         };
@@ -165,7 +144,6 @@ const ScrollThread = () => {
             wake();
         };
 
-        // شروع بدون پرش: سر نخ مستقیم روی هدف فعلی می‌شینه
         if (reduce) {
             cur = total;
         } else {
@@ -174,7 +152,6 @@ const ScrollThread = () => {
         }
         apply();
 
-        // ظاهر شدن نرم
         const fade = requestAnimationFrame(() => {
             svg.style.opacity = "1";
         });
@@ -207,7 +184,6 @@ const ScrollThread = () => {
                 </filter>
             </defs>
 
-            {/* خط دوم، خیلی کم‌رنگ: حس خط‌خطیِ مداد */}
             <path
                 d={layout.sketchD}
                 fill="none"
@@ -217,7 +193,6 @@ const ScrollThread = () => {
                 strokeLinecap="round"
             />
 
-            {/* ردِ کم‌رنگ کل مسیر */}
             <path
                 d={layout.d}
                 fill="none"
@@ -227,7 +202,6 @@ const ScrollThread = () => {
                 strokeLinecap="round"
             />
 
-            {/* بخشِ کشیده‌شده */}
             <path
                 ref={pathRef}
                 d={layout.d}
@@ -238,7 +212,6 @@ const ScrollThread = () => {
                 style={{ stroke: "var(--primary)", opacity: 0 }}
             />
 
-            {/* نقطه‌ی هر بخش */}
             {layout.nodes.map((n, i) => (
                 <g key={n.id}>
                     <g
@@ -266,7 +239,6 @@ const ScrollThread = () => {
                 </g>
             ))}
 
-            {/* سر نخ */}
             <g ref={headRef} style={{ opacity: 0, transition: "opacity 500ms ease" }}>
                 <circle
                     r={14}
