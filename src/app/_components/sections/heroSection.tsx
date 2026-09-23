@@ -30,19 +30,17 @@ const HeroSection = () =>
                         </p>
 
                         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-zinc-50">
-                            Front-End Engineer &
+                            Front-End Engineer
                         </h1>
 
-                        <h2 className="mt-3 text-3xl md:text-4xl font-bold text-zinc-500 dark:text-zinc-400">
-                            <TypingText />
-                        </h2>
-
+                        {/*<h2 className="mt-3 text-3xl md:text-4xl font-bold text-zinc-500 dark:text-zinc-400">*/}
+                        {/*    <TypingText />*/}
+                        {/*</h2>*/}
                         <p className="mt-6 md:text-lg md:leading-8 text-zinc-300">
                             I Build Designs and Websites that solve problems, inspiring
                             success.
                         </p>
                         <section className="group relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px]">
-                            {/* کارت پشتی — before: ناحیه‌ی هاور رو ۲۰px به چپ پهن‌تر می‌کنه چون فقط یه نوار باریک ازش دیده می‌شه */}
                             <div className="group/back absolute inset-0 translate-x-[5px] md:translate-x-[-40px] translate-y-[12px]
     md:before:absolute md:before:inset-y-0 md:before:-left-5 md:before:w-5">
                                 <div className="h-full w-full transition-transform duration-500 ease-out md:group-hover/back:-translate-x-3.5">
@@ -50,16 +48,12 @@ const HeroSection = () =>
         shadow-2xl backdrop-blur-sm" />
                                 </div>
                             </div>
-
-                            {/* کارت وسط */}
                             <div className="group/middle absolute inset-0 translate-x-[10px] md:translate-x-[-20px] translate-y-[6px]">
                                 <div className="h-full w-full transition-transform duration-500 ease-out md:group-hover/middle:-translate-x-3.5">
                                     <div className="h-full w-full animate-card-middle rounded-3xl border border-white/10 bg-white/[0.5] opacity-55
         shadow-2xl backdrop-blur-sm" />
                                 </div>
                             </div>
-
-                            {/* کارت جلویی — به چپ می‌ره، عکس کمی زوم می‌شه و یه درخشش آبی می‌گیره */}
                             <div className="group/front absolute inset-0 translate-x-[15px]">
                                 <div className="h-full w-full transition-transform duration-500 ease-out md:group-hover/front:-translate-x-3.5">
                                     <div className="relative h-full w-full animate-card-front overflow-hidden rounded-3xl border border-white/10
@@ -76,8 +70,6 @@ const HeroSection = () =>
                                     </div>
                                 </div>
                             </div>
-
-                            {/* دکمه‌ی گردان: لینک به بخش About */}
                             <a
                                 href="#about"
                                 aria-label="Scroll to About section"
@@ -151,8 +143,7 @@ const HeroSection = () =>
                             bg-[linear-gradient(90deg,var(--primary)_0%,#4d5ba7_40%,#4d5ba7_60%,var(--primary)_100%)]
                             px-6 py-4 text-white disabled:cursor-not-allowed disabled:opacity-50 w-full md:w-fit"
                             >
-                                <span>Contact me</span>
-
+                                <span>Get In Touch</span>
                                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                                 <ArrowRight size={18} />
                             </span>
@@ -162,14 +153,12 @@ const HeroSection = () =>
                                 download
                                 className="group flex cursor-pointer items-center justify-center gap-2 rounded-full
                                 border border-[var(--primary)] px-6 py-4 text-white transition-all duration-300
-
-    hover:bg-white/10 w-full md:w-fit"
+                                 hover:bg-white/10 w-full md:w-fit"
                             >
                                 <span>Download Resume</span>
-
                                 <span className="transition-transform duration-300 group-hover:translate-y-1">
-        <ArrowDown size={18} />
-    </span>
+                                    <ArrowDown size={18} />
+                                </span>
                             </a>
                         </div>
                     </div>

@@ -1,10 +1,9 @@
-"use client";
-
+"use client"
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import appRoutes from "@/common/appRoutes";
 
-const navItems = ["Home", "Services", "Works"];
+const navItems = ["Home", "techstack", "Works"];
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState("home");
@@ -49,12 +48,10 @@ const Header = () => {
             >
                 Mahsa Geramy
             </a>
-
             <nav className="hidden items-center gap-2 rounded-full bg-transparent px-2 py-3 md:flex">
                 {navItems.map((item) => {
                     const sectionId = item.toLowerCase();
                     const isActive = activeSection === sectionId;
-
                     return (
                         <a
                             key={item}
@@ -78,7 +75,6 @@ const Header = () => {
                     );
                 })}
             </nav>
-
             <a
                 href={`${appRoutes.Main}#contactMe`}
                 className="group flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full
@@ -86,9 +82,8 @@ const Header = () => {
                   text-white md:px-6 md:py-4"
             >
                 <span className="text-sm md:text-base">
-                    Contact me
+                    Get In Touch
                 </span>
-
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <ArrowRight size={18} />
                 </span>
