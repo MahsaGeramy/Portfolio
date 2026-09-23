@@ -4,6 +4,10 @@ import Collapse from "@/app/_components/ui/collapse";
 import Reveal from "@/app/_components/ui/Reveal";
 import Image from "next/image";
 import NodeJs from "../../../../public/images/technologies/nodeJs.webp";
+import GitLab from "../../../../public/images/technologies/GitLab.webp";
+import WebStorm from "../../../../public/images/technologies/WebStorm.webp";
+import Jira from "../../../../public/images/technologies/Jira.webp";
+import Trello from "../../../../public/images/technologies/Trello.webp";
 
 const technologyGroups = [
     {
@@ -77,7 +81,7 @@ const technologyGroups = [
             {
                 name: "GitLab",
                 category: "Version Control",
-                icon: "/images/technologies/Gitlab.webp",
+                icon: GitLab,
             },
             {
                 name: "Docker",
@@ -102,17 +106,17 @@ const technologyGroups = [
             {
                 name: "WebStorm",
                 category: "IDE",
-                icon: "/images/technologies/webstorm.webp",
+                icon: WebStorm,
             },
             {
                 name: "Trello",
                 category: "Project Management",
-                icon: "/images/technologies/Trello.webp",
+                icon: Trello,
             },
             {
                 name: "Jira",
                 category: "Project Management",
-                icon: "/images/technologies/Jira.webp",
+                icon: Jira,
             },
         ],
     },
