@@ -3,11 +3,6 @@ import { useState } from "react";
 import Collapse from "@/app/_components/ui/collapse";
 import Reveal from "@/app/_components/ui/Reveal";
 import Image from "next/image";
-import NodeJs from "../../../../public/images/technologies/nodeJs.webp";
-import GitLab from "../../../../public/images/technologies/gitlab.webp";
-import WebStorm from "../../../../public/images/technologies/WebStorm.webp";
-import Jira from "../../../../public/images/technologies/Jira.webp";
-import Trello from "../../../../public/images/technologies/Trello.webp";
 
 const technologyGroups = [
     {
@@ -26,7 +21,7 @@ const technologyGroups = [
             {
                 name: "Node.js",
                 category: "Runtime",
-                icon: NodeJs,
+                icon: "/images/technologies/nodeJs.webp",
             },
             {
                 name: "TypeScript",
@@ -79,9 +74,9 @@ const technologyGroups = [
                 icon: "/images/technologies/github.webp",
             },
             {
-                name: "GitLab updateeee",
+                name: "GitLab",
                 category: "Version Control",
-                icon: GitLab,
+                icon: "/images/technologies/gitlab.webp",
             },
             {
                 name: "Docker",
@@ -106,17 +101,17 @@ const technologyGroups = [
             {
                 name: "WebStorm",
                 category: "IDE",
-                icon: WebStorm,
+                icon: "/images/technologies/webStorm.webp",
             },
             {
                 name: "Trello",
                 category: "Project Management",
-                icon: Trello,
+                icon: "/images/technologies/trello.webp",
             },
             {
                 name: "Jira",
                 category: "Project Management",
-                icon: Jira,
+                icon: "/images/technologies/jira.webp",
             },
         ],
     },
