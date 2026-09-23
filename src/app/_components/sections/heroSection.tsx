@@ -139,8 +139,7 @@ const HeroSection = () =>
                 >
                     <div className="flex flex-col items-center gap-5">
                         <p className="text-zinc-300">
-                            If you have a project in mind, check out my work
-                            and contact me to work together. Best of luck!
+                            Have a project in mind? Check out my work and get in touch. Let’s build something great together.
                         </p>
                         <div className="flex flex-col lg:flex-row gap-3 md:gap-5 justify-start w-full">
                             <a href="#contactMe"
