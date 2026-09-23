@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react";
 import Collapse from "@/app/_components/ui/collapse";
-import { Code2, PencilIcon, Search,Globe } from "lucide-react";
 import Reveal from "@/app/_components/ui/Reveal";
 import Image from "next/image";
+import NodeJs from "../../../../public/images/technologies/nodeJs.webp";
 
 const technologyGroups = [
     {
@@ -22,7 +22,7 @@ const technologyGroups = [
             {
                 name: "Node.js",
                 category: "Runtime",
-                icon: "/images/technologies/nodejs.webp",
+                icon: NodeJs,
             },
             {
                 name: "TypeScript",
