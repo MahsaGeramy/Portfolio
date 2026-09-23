@@ -79,7 +79,7 @@ const technologyGroups = [
                 icon: "/images/technologies/github.webp",
             },
             {
-                name: "GitLab",
+                name: "fdbhdfhb",
                 category: "Version Control",
                 icon: GitLab,
             },
