@@ -4,7 +4,7 @@ import Collapse from "@/app/_components/ui/collapse";
 import Reveal from "@/app/_components/ui/Reveal";
 import Image from "next/image";
 import NodeJs from "../../../../public/images/technologies/nodeJs.webp";
-import GitLab from "../../../../public/images/technologies/GitLab.webp";
+import GitLab from "../../../../public/images/technologies/gitlab.webp";
 import WebStorm from "../../../../public/images/technologies/WebStorm.webp";
 import Jira from "../../../../public/images/technologies/Jira.webp";
 import Trello from "../../../../public/images/technologies/Trello.webp";
