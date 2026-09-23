@@ -22,8 +22,8 @@ const HeroSection = () =>
                         {/*    animate-float rounded-full bg-blue-900/50 blur-[120px]"*/}
                         {/*/>*/}
                         <div
-                            className="pointer-events-none absolute right-[-30rem] bottom-0 h-[300px] w-[300px] -translate-x-1/2
-                    animate-float rounded-full bg-blue-900/50 blur-[120px] hidden md:block"
+                            className="pointer-events-none absolute right-[-27rem] bottom-0 h-[300px] w-[300px] -translate-x-1/2
+                             animate-float rounded-full bg-blue-900/50 blur-[120px] hidden md:block"
                         />
                         <p className="mt-6 text-lg leading-8 text-zinc-300">
                             Hi! I’m Mahsa.
@@ -37,8 +37,7 @@ const HeroSection = () =>
                         {/*    <TypingText />*/}
                         {/*</h2>*/}
                         <p className="mt-6 md:text-lg md:leading-8 text-zinc-300">
-                            I Build Designs and Websites that solve problems, inspiring
-                            success.
+                            I turn ideas into fast, scalable, and user-focused web experiences.
                         </p>
                         <section className="group relative mt-10 h-[300px] md:h-[400px] w-[200px] md:w-[250px]">
                             <div className="group/back absolute inset-0 translate-x-[5px] md:translate-x-[-40px] translate-y-[12px]
@@ -123,10 +122,16 @@ const HeroSection = () =>
                     className="w-full md:w-[60%]"
                 >
                     <p className="text-2xl font-bold text-zinc-300">
-                        About Me: Freelancer who enjoys <label className="text-primary">web design</label> and
-                        <label className="text-primary"> development</label>, passionate about my work, disciplined and
-                        successful.
+                        I’m a{" "}
+                        <span className="text-primary">Front-End Engineer</span> who enjoys
+                        turning <span className="text-primary">ideas</span> into fast,
+                        thoughtful, and user-focused web experiences. I care about{" "}
+                        <span className="text-primary">clean code</span>,{" "}
+                        <span className="text-primary">performance</span>,{" "}
+                        <span className="text-primary">accessibility</span>, and creating
+                        interfaces that feel as good as they work.
                     </p>
+
                 </Reveal>
                 <Reveal
                     delay={200}
@@ -137,7 +142,7 @@ const HeroSection = () =>
                             If you have a project in mind, check out my work
                             and contact me to work together. Best of luck!
                         </p>
-                        <div className="flex flex-col md:flex-row gap-3 md:gap-5 justify-start w-full">
+                        <div className="flex flex-col lg:flex-row gap-3 md:gap-5 justify-start w-full">
                             <a href="#contactMe"
                                className="group flex cursor-pointer items-center justify-center gap-2 rounded-full
                             bg-[linear-gradient(90deg,var(--primary)_0%,#4d5ba7_40%,#4d5ba7_60%,var(--primary)_100%)]

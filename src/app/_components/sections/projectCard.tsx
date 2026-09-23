@@ -15,7 +15,10 @@ const ProjectCard = ({ data }: { data: Project }) => {
             target="_blank"
             rel="noopener noreferrer"
             href={data.link}
-            className="min-w-[300px] w-[300px] bg-white/5 overflow-hidden rounded-xl flex
+            className="
+            min-w-[300px] w-[300px]
+            {/*w-full*/}
+             bg-white/5 overflow-hidden rounded-xl flex
              flex-col gap-3 hover:scale-[0.98] transition animated-border"
         >
             <div className="relative w-full h-[200px]">
