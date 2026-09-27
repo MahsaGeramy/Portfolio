@@ -46,7 +46,7 @@ const ProjectCard = ({ data }: { data: Project }) => {
                 {data.description}
             </p>
 
-            <div className="bg-blue-950/40 py-2 rounded-full flex text-white items-center text-sm w-11/12
+            <div className="bg-blue-950/60 py-2 rounded-full flex text-white items-center text-sm w-11/12
              justify-center text-center mx-3 mb-3 px-2">
                 visit site
                 <ArrowUpRight
