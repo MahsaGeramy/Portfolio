@@ -5,6 +5,7 @@ import Reveal from "@/app/_components/ui/Reveal";
 import JamoojPic from "../../../../public/images/projects/jamooj.webp";
 import JamoojHostPic from "../../../../public/images/projects/jamooj-host.webp";
 import MivePic from "../../../../public/images/projects/mive.webp";
+import FaePic from "../../../../public/images/projects/fae.webp";
 import NotFoundPic from "../../../../public/images/projects/404.webp";
 
 const MyWorks = () =>{
@@ -29,6 +30,12 @@ const MyWorks = () =>{
             image: JamoojHostPic
         },
         {
+            title: "FAE",
+            description: "Designed and developed a modern, responsive web experience, from UI/UX and visual design to front-end implementation and performance optimization, with a strong focus on usability, accessibility, and a smooth experience across different devices.",
+            link: "https://fae.edu.mt/new",
+            image: FaePic
+        },
+        {
             title: "NotFound",
             description: "Designed and developed a modern, interactive 404 page featuring a playful mini-game, engaging visuals, and a smooth user experience that turns a missing page into a fun interaction.",
             link: "https://mahsageramy.ir/NotFound",
@@ -44,19 +51,19 @@ const MyWorks = () =>{
                 <p className="mb-10 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Works
                 </p>
-                <Slider
-                    data={
-                        projects.map((project,index)=>
-                            <ProjectCard data={project} key={index}/>
-                        )}
-                    id="projects"
-                    showNavigationButtons={true}
-                />
-                {/*<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">*/}
-                {/*    {projects.map((project,index)=>*/}
-                {/*        <ProjectCard data={project} key={index}/>*/}
-                {/*    )}*/}
-                {/*</div>*/}
+                {/*<Slider*/}
+                {/*    data={*/}
+                {/*        projects.map((project,index)=>*/}
+                {/*            <ProjectCard data={project} key={index}/>*/}
+                {/*        )}*/}
+                {/*    id="projects"*/}
+                {/*    showNavigationButtons={true}*/}
+                {/*/>*/}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {projects.map((project,index)=>
+                        <ProjectCard data={project} key={index}/>
+                    )}
+                </div>
             </section>
         </Reveal>
     )

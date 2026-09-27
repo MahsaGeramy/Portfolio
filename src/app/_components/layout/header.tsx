@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import appRoutes from "@/common/appRoutes";
 
-const navItems = ["Home", "techstack", "Works"];
+const navItems = ["Home", "Tech Stack", "Works"];
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState("home");

@@ -149,7 +149,7 @@ const TechStack = () => {
             className="w-full flex justify-center"
             delay={200}
         >
-            <section id="techstack" className="flex flex-col w-full max-w-[90rem] pt-20">
+            <section id="tech stack" className="flex flex-col w-full max-w-[90rem] pt-20">
                 <p className="mb-8 text-center text-3xl md:text-4xl font-bold text-zinc-100">
                     <span className="text-primary">My</span> Tech Stack
                 </p>
