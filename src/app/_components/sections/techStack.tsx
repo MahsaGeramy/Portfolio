@@ -165,7 +165,7 @@ const TechStack = () => {
                                     >
                                         <Image src={technology.icon} alt="" width={500} height={500}
                                                className="absolute top-1 right-2 z-0 h-20 w-20 object-contain opacity-[0.08]
-                                    grayscale transition-all duration-500 ease-out group-hover:h-30 group-hover:w-30
+                                     transition-all duration-500 ease-out group-hover:h-30 group-hover:w-30
                                     group-hover:-right-4 group-hover:-bottom-4 group-hover:opacity-[0.2] group-hover:grayscale-0
                                     group-hover:rotate-6"
                                         />

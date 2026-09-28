@@ -24,10 +24,9 @@ const ProjectCard = ({ data }: { data: Project }) => {
         transition animated-border
     "
         >
-            <div className="relative w-full h-[200px] overflow-hidden">
+            <div className="relative w-full h-[220px] overflow-hidden">
                 <Image
-                    className="
-                object-cover
+                    className="object-cover object-top
                 transition-transform duration-500 ease-out
                 group-hover:scale-110
             "
