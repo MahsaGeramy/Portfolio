@@ -121,17 +121,15 @@ const HeroSection = () =>
                 <Reveal
                     className="w-full md:w-[60%]"
                 >
-                    <p className="text-2xl font-bold text-zinc-300">
-                        I’m a{" "}
-                        <span className="text-primary">Front-End Engineer</span> who enjoys
-                        turning <span className="text-primary">ideas</span> into fast,
-                        thoughtful, and user-focused web experiences. I care about{" "}
+                    <p className="max-w-2xl text-2xl font-semibold leading-relaxed text-zinc-300">
+                        I’m a <span className="text-primary">Front-End Engineer</span> with 3+ years
+                        of experience building fast, accessible, and user-focused web experiences.
+                        I turn ideas into scalable interfaces with a strong focus on{" "}
                         <span className="text-primary">clean code</span>,{" "}
                         <span className="text-primary">performance</span>,{" "}
-                        <span className="text-primary">accessibility</span>, and creating
-                        interfaces that feel as good as they work.
+                        <span className="text-primary">technical SEO</span>, and{" "}
+                        <span className="text-primary">accessibility</span>.
                     </p>
-
                 </Reveal>
                 <Reveal
                     delay={200}
